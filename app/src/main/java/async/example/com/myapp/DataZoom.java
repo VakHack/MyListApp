@@ -41,7 +41,7 @@ public class DataZoom extends AppCompatActivity {
         description.setTypeface(Typeface.createFromAsset(getAssets(), "CzaristiteBold.ttf"));
         description.setText(item.getDescription());
 
-        ImageView pic = findViewById(R.id.zoomImage);
+        final ImageView pic = findViewById(R.id.zoomImage);
 
         ScreenMeasurer sm = new ScreenMeasurer(this, 0);
         Picasso.with(this)
@@ -49,6 +49,7 @@ public class DataZoom extends AppCompatActivity {
                 .resize(sm.getWidth(), sm.getHeight())
                 .centerCrop()
                 .into(pic);
+
 
         pic.setOnTouchListener(new OnSwipeTouchListener(this) {
             @Override
@@ -62,6 +63,15 @@ public class DataZoom extends AppCompatActivity {
 
                 callNextIfWithinBounds(itemPosition - 1);
             }
+
+            @Override
+            public void onClick() {
+
+                Intent back = new Intent(new Intent(DataZoom.this, ListScreen.class));
+                startActivity(back);
+            }
         });
     }
+
+
 }
