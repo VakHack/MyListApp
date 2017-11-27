@@ -48,7 +48,7 @@ public class DataItemAdapter extends RecyclerView.Adapter<DataItemAdapter.ViewHo
         ScreenMeasurer sm = new ScreenMeasurer(context, 0);
         Picasso.with(context)
                 .load(item.getPicURL())
-                .resize(sm.getWidth(), 400)
+                .resize(sm.getWidth(), 300)
                 .centerCrop()
                 .into(holder.pic);
 
