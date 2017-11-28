@@ -4,6 +4,9 @@ import android.util.Log;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.JsonHttpResponseHandler;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
@@ -46,23 +49,5 @@ public class ItemsGetter {
     public ArrayList<DataItem> get() {
         return items;
     }
-
-//    public void runAsyncClientTest(){
-//
-//        AsyncHttpClient client = new AsyncHttpClient();
-//        client.get("https://jsonplaceholder.typicode.com", new AsyncHttpResponseHandler() {
-//            @Override
-//            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-//
-//                Log.i("myappLog", responseBody.toString());
-//            }
-//
-//            @Override
-//            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-//
-//                Log.i("myappLog", responseBody.toString());
-//            }
-//        });
-//    }
 
 }
