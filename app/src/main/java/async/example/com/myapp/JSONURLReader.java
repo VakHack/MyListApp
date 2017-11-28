@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
 
@@ -26,11 +27,12 @@ public class JSONURLReader extends AsyncTask<String, Void, String> {
         String json = null;
 
         try {
+
             json = IOUtils.toString(new URL(url), Charset.forName("UTF-8"));
 
-        } catch (IOException e) {
+        } catch (MalformedURLException e) {
             e.printStackTrace();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 

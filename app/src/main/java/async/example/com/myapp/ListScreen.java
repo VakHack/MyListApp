@@ -16,6 +16,7 @@ public class ListScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<DataItem> items = ItemsGetter.getInstance().get();
+        //ItemsGetter.getInstance().runAsyncClientTest();
 
         TextView title = findViewById(R.id.title);
         title.setTypeface(Typeface.createFromAsset(getAssets(), "Anabelle Script.ttf"));
