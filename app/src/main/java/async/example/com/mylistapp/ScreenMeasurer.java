@@ -1,4 +1,4 @@
-package async.example.com.myapp;
+package async.example.com.mylistapp;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

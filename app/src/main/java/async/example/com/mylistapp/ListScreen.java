@@ -1,21 +1,12 @@
-package async.example.com.myapp;
+package async.example.com.mylistapp;
 
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.widget.TextView;
 
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.JsonHttpResponseHandler;
-import com.loopj.android.http.TextHttpResponseHandler;
-
-import org.json.JSONObject;
-
 import java.util.ArrayList;
-
-import cz.msebera.android.httpclient.Header;
 
 public class ListScreen extends AppCompatActivity {
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8E3343"
-    tools:context="async.example.com.myapp.SplashScreen">
+    tools:context="async.example.com.mylistapp.SplashScreen">
 
     <TextView
         android:id="@+id/flashTitle"

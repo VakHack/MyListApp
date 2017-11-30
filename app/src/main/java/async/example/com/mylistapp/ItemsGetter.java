@@ -1,19 +1,9 @@
-package async.example.com.myapp;
-
-import android.util.Log;
-
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.JsonHttpResponseHandler;
-
-import org.json.JSONObject;
+package async.example.com.mylistapp;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-
-import cz.msebera.android.httpclient.Header;
 
 /**
  * Created by Administrator on 27/11/2017.
